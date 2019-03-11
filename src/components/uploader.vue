@@ -20,6 +20,10 @@
     },
     methods: {
       upload () {
+        if (this.handlerDataAudio) {
+          this.$emit('data-audio', this.record)
+          return
+        }
         if (!this.record.url) {
           return
         }
