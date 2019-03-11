@@ -22,7 +22,8 @@
       :successful-upload="callback"
       :failed-upload="callback"
       :bit-rate="192"
-      :handlerDataAudio="true"/>
+      :handlerDataAudio="true"
+      @onrecord="method"/>
 
     <audio-player :src="mp3" v-if="!showRecorder"/>
   </div>
@@ -46,6 +47,9 @@
       },
       toggle () {
         this.showRecorder = !this.showRecorder
+      },
+      method(value) {
+        console.log(value)
       }
     }
   }

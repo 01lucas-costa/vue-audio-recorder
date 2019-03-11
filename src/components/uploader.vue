@@ -18,10 +18,11 @@
     components: {
       IconButton
     },
+    
     methods: {
       upload () {
         if (this.handlerDataAudio) {
-          this.$emit('data-audio', this.record)
+          this.$eventBus.$emit('audio-blob', this.record)
           return
         }
         if (!this.record.url) {

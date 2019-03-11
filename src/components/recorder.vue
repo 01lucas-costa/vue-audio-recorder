@@ -306,6 +306,10 @@
           this.failedUpload && this.failedUpload(msg.response)
         }
       })
+
+      this.$eventBus.$on('audio-blob', data => {
+        this.$emit('onrecord', data)
+      })
     },
     beforeDestroy () {
       this.stopRecorder()
