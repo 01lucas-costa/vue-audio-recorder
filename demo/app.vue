@@ -21,7 +21,8 @@
       :before-upload="callback"
       :successful-upload="callback"
       :failed-upload="callback"
-      :bit-rate="192"/>
+      :bit-rate="192"
+      :handlerDataAudio="true"/>
 
     <audio-player :src="mp3" v-if="!showRecorder"/>
   </div>
