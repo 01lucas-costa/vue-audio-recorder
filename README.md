@@ -50,6 +50,14 @@ npm i vue-audio-recorder --save
 | after-recording       | Function | Callback fires after click the stop button or exceeding the time limit   |
 | select-record         | Function | Callback fires after choise a record. Returns the record                 |
 
+## AudioRecorder events
+| Event                 | Description                                  |
+| --------------------- | -------------------------------------------- |
+| onrecord              | This event returns an object containing id,  |
+|                       | url and audio data in blob format, and       | 
+|                       | cancels the upload action so we can handle   |
+|                       | the recorded audio ourselves.                |
+
 ## AudioPlayer props
 | Prop                  | Type     | Description                                                     |
 | --------------------- | -------- | --------------------------------------------------------------- |
