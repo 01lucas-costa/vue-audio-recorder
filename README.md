@@ -54,9 +54,10 @@ npm i vue-audio-recorder --save
 | Event                 | Description                                  |
 | --------------------- | -------------------------------------------- |
 | onrecord              | This event returns an object containing id,  |
-|                       | url and audio data in blob format, and       | 
-|                       | cancels the upload action so we can handle   |
-|                       | the recorded audio ourselves.                |
+                          url and audio data in blob format, and        
+                          cancels the upload action so we can handle   
+                          the recorded audio ourselves.
+|                       |                                              |
 
 ## AudioPlayer props
 | Prop                  | Type     | Description                                                     |
